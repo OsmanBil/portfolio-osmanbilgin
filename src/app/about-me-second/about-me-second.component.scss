@@ -1,0 +1,27 @@
+.about-me-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+
+    .about-me-second-top{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .about-me-second-top-cont{
+        padding-left: 12px;
+    }
+
+    .stories{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .story{
+        padding-left: 12px;
+    }
+}
