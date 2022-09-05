@@ -1,34 +1,106 @@
 <div class="works" id="works">
+    <div>
+
+    </div>
+
 
     <div class="titel">
         My work
     </div>
     <div class="myWorkTabs">
         <div class="myWorkTab">
-            all
+            <button class="button" [ngClass]="{'buttonActive':allWorksStatus==1}" (click)="showAllWorks()">All</button>
         </div>
         <div class="myWorkTab">
-            angular
+            <button class="button" [ngClass]="{'buttonActive':javascriptStatus==1}"
+                (click)="showJavascriptWorks() ">Angular</button>
         </div>
         <div class="myWorkTab">
-            java script
+            <button class="button" [ngClass]="{'buttonActive':angularWorksStatus==1}"
+                (click)="showAngularWorksStatus()">JavaScript</button>
         </div>
     </div>
     <div class="works-info">
-        <div class="work-row">
-            <div class="work-cont">
-                Work1
+
+
+        <div class="work-row " data-aos="flip-left" data-aos-duration="1000">
+            <div class="work-cont work1" [ngClass]="{'d-none':javascriptStatus==1}">
+                <div class="hoverDeactive" [ngClass]="{'hoverActive':Work1hoverActive==1}"
+                    (mouseenter)="mouseEnterw1('div a') " (mouseleave)="mouseLeavew1('div A')">
+                    <h2></h2>
+                </div>
+                <div class="hoverDeactive bgOp" [ngClass]="{'hoverActive':Work1hoverActive==0} "
+                    (mouseenter)="mouseEnterw1('div b')" (mouseleave)="mouseLeavew1('div B')">
+                    <div class="textMarginTitle">
+                        El Pollo Locco
+                    </div>
+                    <div class="textMargin">
+                        El Pollo Locco is a platform based jump and run game with html css and JavaScript
+                    </div>
+                    <div class="textMargin">
+                        <button class="button btnNew" (click)="openElpolloloco()">To the Project</button>
+                    </div>
+
+                </div>
             </div>
-            <div class="work-cont">
-                Work2
+            <div class="work-cont work2" [ngClass]="{'d-none':javascriptStatus==1}">
+                <div class="hoverDeactive" [ngClass]="{'hoverActive':Work2hoverActive==1}"
+                    (mouseenter)="mouseEnterw2('div a') " (mouseleave)="mouseLeavew2('div A')">
+                    <h2></h2>
+                </div>
+                <div class="hoverDeactive bgOp" [ngClass]="{'hoverActive':Work2hoverActive==0} "
+                    (mouseenter)="mouseEnterw2('div b')" (mouseleave)="mouseLeavew2('div B')">
+                    <div class="textMarginTitle">
+                       Pokedex
+                    </div>
+                    <div class="textMargin">
+                       Pokedex is a Applikation that catches and views datas from an API
+                    </div>
+                    <div class="textMargin">
+                        <button class="button btnNew" (click)="openPokedex()">To the Project</button>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="work-row">
-            <div class="work-cont">
-                Work3
+        <div class="work-row" data-aos="flip-left" data-aos-duration="1000">
+            <div class="work-cont work3" [ngClass]="{'d-none':angularWorksStatus==1}">
+                <div class="hoverDeactive" [ngClass]="{'hoverActive':Work3hoverActive==1}"
+                    (mouseenter)="mouseEnterw3('div a') " (mouseleave)="mouseLeavew3('div A')">
+                    <h2></h2>
+                </div>
+                <div class="hoverDeactive bgOp" [ngClass]="{'hoverActive':Work3hoverActive==0} "
+                    (mouseenter)="mouseEnterw3('div b')" (mouseleave)="mouseLeavew3('div B')">
+                    <div class="textMarginTitle">
+                        Ring of fire
+                    </div>
+                    <div class="textMargin">
+                        Ring of fire is a Card game, made with Angular
+                    </div>
+                    <div class="textMargin">
+                        <button class="button btnNew" (click)="openRingOfFire()">To the Project</button>
+                    </div>
+
+                </div>
             </div>
-            <div class="work-cont">
-                Work4
+            <div class="work-cont work4" [ngClass]="{'d-none':javascriptStatus==1}">
+                <div class="hoverDeactive" [ngClass]="{'hoverActive':Work4hoverActive==1}"
+                    (mouseenter)="mouseEnterw4('div a') " (mouseleave)="mouseLeavew4('div A')">
+                    <h2></h2>
+                </div>
+                <div class="hoverDeactive bgOp" [ngClass]="{'hoverActive':Work4hoverActive==0} "
+                    (mouseenter)="mouseEnterw4('div b')" (mouseleave)="mouseLeavew4('div B')">
+                    <div class="textMarginTitle">
+                        Supergram
+                    </div>
+                    <div class="textMargin">
+                        Supergram is a clone of Instagram, made with html css and js
+                    </div>
+                    <div class="textMargin">
+                        <button class="button btnNew" (click)="openSupergram()">To the Project</button>
+                    </div>
+
+                </div>
             </div>
         </div>
 

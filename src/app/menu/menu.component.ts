@@ -8,7 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   @Input() darkMode = true;
 
-  constructor() { }
+  isMenuOpened: boolean = false;
+
+  toggleMenu(): void {
+    this.isMenuOpened = !this.isMenuOpened;
+  }
+
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }

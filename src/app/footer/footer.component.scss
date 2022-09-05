@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    max-width: 100%;
+    background-color: gray;
+
+    .footer-inside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        max-width: 100%;
+        
+    }
+
+    .links-left{
+        padding-left: 30px;
+    }
+
+    .links-right{
+        padding-right: 30px;
+    }
+
+    img {
+       
+        height: 30px;
+        width: 30px;
+        margin-left: 40px;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+}

@@ -15,6 +15,17 @@ import { AboutMeSecondComponent } from './about-me-second/about-me-second.compon
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OpenCloseComponent } from './open-close/open-close.component';
+
+import {MatButtonModule} from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
+const MaterialComponents = [
+  MatButtonModule,
+  MatButtonToggleModule
+]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,11 +39,13 @@ import { FooterComponent } from './footer/footer.component';
     MyWorkComponent,
     AboutMeSecondComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    OpenCloseComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

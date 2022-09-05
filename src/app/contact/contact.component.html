@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<div class="contact" id="contact">
+
+  <div class="contact-titel">
+    Contact me
+  </div>
+  <div>
+    Get in touch via the form below.
+  </div>
+
+  <div class="contactContainer">
+
+    <form action="contact.php" method="post">
+      <div class="elem-group">
+        <label for="name">Name</label>
+        <input class="textfield" type="text" id="name" name="visitor_name" placeholder="Enter your name"
+          pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+      <div class="elem-group">
+        <label for="email">E-mail adress</label>
+        <input class="textfield" type="email" id="email" name="visitor_email" placeholder="Enter your E-mail adress"
+          required>
+      </div>
+      <div class="elem-group">
+        <label for="message">Message</label>
+        <textarea class="textfield" id="message" name="visitor_message" placeholder="Enter your message"
+          required></textarea>
+      </div>
+      <div class="btnContainer">
+        <button type="submit">Send</button>
+      </div>
+
+    </form>
+  </div>
+
+</div>

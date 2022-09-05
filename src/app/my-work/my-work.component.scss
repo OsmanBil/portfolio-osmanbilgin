@@ -3,9 +3,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100vh;
     width: 100vw;
     max-width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: 600;
 
 
     .works-info {
@@ -15,6 +17,7 @@
         align-items: center;
         width: 100vw;
         max-width: 100%;
+        flex-wrap: wrap;
 
     }
 
@@ -24,22 +27,29 @@
         align-items: center;
         width: 100vw;
         max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 30px;
 
     }
 
     .work-row {
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
+        padding-bottom: 40px;
+
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .work-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 30px;
         background-color: gray;
-        height: 100px;
-        width: 200px;
+        height: 200px;
+        width: 400px;
     }
 
     .icon {
@@ -49,7 +59,7 @@
         left: 80px;
     }
 
-    .myWorkTabs{
+    .myWorkTabs {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -58,7 +68,193 @@
         max-width: 100%;
     }
 
-    .myWorkTab{
-        padding-left: 12px;
+    .myWorkTab {
+        margin-left: 10px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .work1 {
+        background-image: url("./../../assets/img/elpolloloco.png");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+
+
+    }
+
+    .work2 {
+        background-image: url("./../../assets/img/pokedex.png");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+    }
+
+    .work3 {
+        background-image: url("./../../assets/img/ringoffire.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+    }
+
+    .work4 {
+        background-image: url("./../../assets/img/supergram.png");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+    }
+
+    .button {
+        background-color: black;
+        color: #FA2759;
+        border: 2px solid #FA2759;
+        font-size: 10px;
+        height: 50px;
+        width: 180px;
+    }
+
+    .button:hover {
+        background-color: #FA2759;
+        color: white;
+    }
+
+    .d-none {
+        display: none;
+    }
+}
+
+.buttonActive {
+    background-color: #FA2759 !important;
+    color: white !important;
+}
+
+.hoverActive {
+    display: none !important;
+    width: 400px;
+    height: 200px;
+
+}
+
+.hoverDeactive {
+    width: 400px;
+    height: 200px;
+}
+
+.bgOp {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.textMargin {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.textMarginTitle {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.btnNew {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+
+    .btnNew:hover {
+        background-color: #FA2759 !important;
+        color: white;
+    }
+}
+
+.titel {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+@media(max-width: 550px) {
+
+
+    .works {
+        .work-cont {
+
+            width: 200px;
+            height: 100px;
+        }
+
+
+
+        .hoverActive {
+            width: 200px;
+            height: 100px;
+        }
+
+        .hoverDeactive {
+            width: 200px;
+            height: 100px;
+        }
+
+        .work1 {
+            background-image: url("./../../assets/img/elpolloloco.png");
+            background-repeat: no-repeat;
+            background-size: 200px 100px;
+
+
+        }
+
+        .work2 {
+            background-image: url("./../../assets/img/pokedex.png");
+            background-repeat: no-repeat;
+            background-size: 200px 100px;
+        }
+
+        .work3 {
+            background-image: url("./../../assets/img/ringoffire.jpg");
+            background-repeat: no-repeat;
+            background-size: 200px 100px;
+        }
+
+        .work4 {
+            background-image: url("./../../assets/img/supergram.png");
+            background-repeat: no-repeat;
+            background-size: 200px 100px;
+        }
+    }
+
+    .hoverActive {
+        display: none !important;
+        width: 200px;
+        height: 100px;
+
+    }
+
+    .hoverDeactive {
+        width: 200px;
+        height: 100px;
+    }
+
+    .textMargin {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .textMarginTitle {
+        font-size: 12px;
+        color: #FA2759;
+    }
+
+    .btnNew {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        height: 20px !important;
+        width: 100px;
+    
+        .btnNew:hover {
+            background-color: #FA2759 !important;
+            color: white;
+            height: 20px !important;
+            width: 100px;
+        }
+    }
+
 }
