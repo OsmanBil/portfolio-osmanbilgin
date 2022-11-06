@@ -1,24 +1,25 @@
 .about-first {
     display: flex;
     flex-direction: row;
-    justify-content: center !important;
+    justify-content: space-between !important;
     align-items: center !important;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
 
     .read-more {
-        padding-left: 120px;
+
         padding-bottom: 30px;
         position: absolute;
+        left: 0px;
         bottom: 24px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100vw;
-        max-width: 100%;
-        margin-left: -120px;
+        width: 100%;
+
+
 
     }
 
@@ -134,9 +135,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     height: 100vh;
-    width: 50vw;
-    max-width: 50%;
-    max-width: 70%;
+
 }
 
 .about-first-left-border {
@@ -151,10 +150,9 @@
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    width: 50vw;
-    max-width: 50%;
+
     padding-top: 50px;
-    padding-left: 30px;
+
 
     .background-circle {
         background-color: #FA2759;
@@ -176,8 +174,9 @@
 }
 
 .about-first-titel {
-    font-size: 45px;
+    font-size: 64px;
     font-weight: 600;
+    padding-top: 18px;
 
     .txt-red {
         color: #FA2759;
@@ -189,6 +188,7 @@
         background-color: black;
         color: #2DFCD8;
         border: 2px solid #2DFCD8;
+        margin-top: 50px;
         font-size: 10px;
         height: 50px;
         width: 180px;
@@ -203,24 +203,30 @@
 }
 
 
-@media(max-width: 690px) {
+@media(max-width: 870px) {
     .about-first {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
 
 
+        .about-first-titel {
+            font-size: 35px;
+    
+        }
+
+
         .read-more {
             display: none;
-    
+
         }
     }
 
-    .button{
+    .button {
         margin-bottom: 15px;
     }
 
-    
+
 
 }
 
@@ -233,7 +239,7 @@
 
         .read-more {
             display: none;
-    
+
         }
     }
 
@@ -259,6 +265,6 @@
         padding-top: 50px;
         padding-left: 0px;
     }
-    
+
 
 }

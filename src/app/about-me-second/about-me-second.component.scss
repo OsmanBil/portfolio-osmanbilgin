@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     background-color: rgb(30, 30, 30);
     color: white;
@@ -19,7 +19,8 @@
     }
 
     .about-me-second-top-cont {
-        padding-left: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .stories {
@@ -104,8 +105,8 @@
 
     .line {
         border-top: 1px solid #2DFCD8;
-        width: 70vw;
-        max-width: 70%;
+        width: 75vw;
+        max-width: 75%;
 
         margin-top: 60px;
         margin-bottom: 60px;

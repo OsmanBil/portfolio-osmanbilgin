@@ -75,7 +75,8 @@
     }
 
     .myWorkTab {
-        margin-left: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
         width: 100px;
         display: flex;
         align-items: center;
@@ -199,10 +200,11 @@
 
 
     .works {
+        
         .work-cont {
 
-            width: 200px;
-            height: 100px;
+            width: 300px;
+            height: 150px;
         }
 
         .button {
@@ -215,19 +217,19 @@
         }
 
         .hoverActive {
-            width: 200px;
-            height: 100px;
+            width: 300px;
+            height: 150px;
         }
 
         .hoverDeactive {
-            width: 200px;
-            height: 100px;
+            width: 300px;
+            height: 150px;
         }
 
         .work1 {
             background-image: url("./../../assets/img/elpolloloco.png");
             background-repeat: no-repeat;
-            background-size: 200px 100px;
+            background-size: 300px 150px;
 
 
         }
@@ -235,21 +237,36 @@
         .work2 {
             background-image: url("./../../assets/img/pokedex.png");
             background-repeat: no-repeat;
-            background-size: 200px 100px;
+            background-size: 300px 150px;
         }
 
         .work3 {
             background-image: url("./../../assets/img/ringoffire.jpg");
             background-repeat: no-repeat;
-            background-size: 200px 100px;
+            background-size: 300px 150px;
         }
 
         .work4 {
             background-image: url("./../../assets/img/supergram.png");
             background-repeat: no-repeat;
-            background-size: 200px 100px;
+            background-size: 300px 150px;
+        }
+
+        .work5 {
+            background-image: url("./../../assets/img/ibo.jpg");
+            background-repeat: no-repeat;
+            background-size: 300px 150px;
+        }
+
+        .work6 {
+            background-image: url("./../../assets/img/iko.jpg");
+            background-repeat: no-repeat;
+            background-size: 300px 150px;
         }
     }
+
+
+
 
     .hoverActive {
         display: none !important;
