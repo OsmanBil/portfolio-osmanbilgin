@@ -14,6 +14,10 @@ export class MenuComponent implements OnInit {
     this.isMenuOpened = !this.isMenuOpened;
   }
 
+  toggleMenu1(): void {
+   this.isMenuOpened = false;
+  }
+
   constructor() { 
     
   }

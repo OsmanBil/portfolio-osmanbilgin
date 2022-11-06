@@ -39,7 +39,7 @@ div.elem-group {
     display: flex;
     flex-wrap: wrap;
     border-radius: 2px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     box-sizing: border-box;
     font-size: 1.25em;
     font-family: 'Aleo';
@@ -49,6 +49,7 @@ div.elem-group {
   
   textarea {
     height: 250px;
+    resize: none;
   }
   
   button {
@@ -62,7 +63,8 @@ div.elem-group {
 
 button:hover {
     background-color: #2DFCD8;
-    color: white;
+    color: black;
+    cursor: pointer;
 }
 
 .btnContainer{

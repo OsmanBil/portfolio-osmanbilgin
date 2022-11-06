@@ -56,50 +56,59 @@ header {
 
 .menuHeader {
     display: flex;
-    
+
 }
-.menuIcon{
+
+.menuIcon {
+    display: none;
+}
+
+.menu {
     display: none;
 }
 
 @media(max-width: 550px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
     header {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .menuIcon{
+    .menuIcon {
         display: flex;
         height: 20px !important;
     }
 
-    .menuText{
+    .menuText {
         display: none;
     }
+
+    .menu-container {
+        width: 200px;
+        background: #04aa6d;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .menu-toggler {
+        padding: 10px;
+    }
+
+    .menu {
+        color: #fff;
+        padding: 10px;
+    }
+
+    .menu-item {
+        cursor: pointer;
+        padding: 5px 0;
+    }
+
+    .menu-item:hover {
+        text-decoration: underline;
+    }
 }
-
-
-.menu-container {
-    width: 200px;
-    background: #04aa6d;
-    font-size: 20px;
-  }
-  
-  .menu-toggler {
-    padding: 10px;
-  }
-  
-  .menu {
-    background: rgb(0, 0, 0);
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .menu-item {
-    cursor: pointer;
-    padding: 5px 0;
-  }
-  
-  .menu-item:hover {
-    text-decoration: underline;
-  }

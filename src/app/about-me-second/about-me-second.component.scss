@@ -11,18 +11,18 @@
     color: white;
     font-weight: 600;
 
-    .about-me-second-top{
+    .about-me-second-top {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
     }
-    
-    .about-me-second-top-cont{
+
+    .about-me-second-top-cont {
         padding-left: 50px;
     }
 
-    .stories{
+    .stories {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -31,8 +31,8 @@
         max-width: 80%;
         flex-wrap: wrap;
     }
-    
-    .story{
+
+    .story {
         margin-left: 20px;
         margin-bottom: 20px;
         display: flex;
@@ -41,16 +41,16 @@
         text-align: center;
         align-items: center;
 
-        
+
     }
 
-    .story-text{
+    .story-text {
         max-width: 150px;
     }
 
     .background-circle {
         background-color: #FA2759;
-      
+
         width: 225px;
         height: 225px;
         border-radius: 122px;
@@ -59,19 +59,19 @@
     }
 
     img {
-       
+
         height: 200px;
         width: 200px;
     }
 
-    .about-me-second-top-cont-text{
+    .about-me-second-top-cont-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .amstc-titel{
+    .amstc-titel {
         font-size: 40px;
         font-weight: 600;
         padding-top: 20px;
@@ -81,7 +81,7 @@
     .icon-border {
         height: 60px;
         width: 60px;
-  
+
         background-color: #2DFCD8;
         border-radius: 30px;
         display: flex;
@@ -93,16 +93,16 @@
     .icon {
         height: 20px;
         width: 20px;
-     }
+    }
 
-     .story-titel{
+    .story-titel {
         padding-top: 20px;
         padding-bottom: 10px;
         color: white;
-     }
+    }
 
 
-     .line{
+    .line {
         border-top: 1px solid #2DFCD8;
         width: 70vw;
         max-width: 70%;
@@ -110,16 +110,28 @@
         margin-top: 60px;
         margin-bottom: 60px;
 
-     }
+    }
 }
 
 @media(max-width: 550px) {
     .about-me-second {
 
-        .about-me-second-top{
+        .about-me-second-top {
             flex-direction: column;
+
         }
 
+        .about-me-second-top-cont {
+            padding-left: 0px !important;
+        }
+
+        .amstc-titel {
+            padding-left: 20px;
+        }
+
+        .amstc-txt{
+            padding-left: 20px;
+        }
     }
 
 

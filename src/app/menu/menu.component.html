@@ -2,7 +2,7 @@
 
 
     <img *ngIf="!darkMode" routerLink="/" src="assets/img/osmanlogomini.png">
-    <img *ngIf="darkMode" routerLink="/" src="assets/img/osmanlogomini.png">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/osmanlogominineu.png">
 
     <div class="menuRight" [class.darkLinks]="darkMode">
         <div>
@@ -12,7 +12,9 @@
                 <div class="menu-toggler" (click)="toggleMenu()"><img class="menuIcon" *ngIf="darkMode" routerLink="/"
                         src="assets/img/menu_icon.png"></div>
                 <div class="menu" *ngIf="isMenuOpened">
-                    <div class="menu-item"><a routerLink="/">HOME</a></div>
+                    
+                    <div class="menu-item"><a >
+                        <div class="menu-toggler" (click)="toggleMenu1()"><img class="menuIcon" src="assets/img/menu_icon_close.png"></div></a></div>
                     <div class="menu-item"><a href="#about-me-second">ABOUT</a></div>
                     <div class="menu-item"><a href="#portfolio">PORTFOLIO</a></div>
                 </div>
