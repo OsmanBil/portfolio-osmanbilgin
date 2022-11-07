@@ -1,115 +1,140 @@
 .about-me-second {
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    /* display: flex; */
+   // flex-direction: ;
+    /* justify-content: space-between; */
     align-items: center;
-
-    width: 100%;
+    width: 100vw;
     max-width: 100%;
     background-color: rgb(30, 30, 30);
     color: white;
-    font-weight: 600;
-
-    .about-me-second-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .about-me-second-top-cont {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .stories {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100vh;
-        max-width: 80%;
-        flex-wrap: wrap;
-    }
-
-    .story {
-        margin-left: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
+    
+    .about-me-second-container {
+        padding-left: 120px;
+        padding-right: 120px;
+        max-width: 1200px;
 
 
-    }
-
-    .story-text {
-        max-width: 150px;
-    }
-
-    .background-circle {
-        background-color: #FA2759;
-
-        width: 225px;
-        height: 225px;
-        border-radius: 122px;
-        border: 1px solid black;
-        text-align: center;
-    }
-
-    img {
-
-        height: 200px;
-        width: 200px;
-    }
-
-    .about-me-second-top-cont-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .amstc-titel {
-        font-size: 40px;
-        font-weight: 600;
-        padding-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    .icon-border {
-        height: 60px;
-        width: 60px;
-
-        background-color: #2DFCD8;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 5px 5px 1px black;
-    }
-
-    .icon {
-        height: 20px;
-        width: 20px;
-    }
-
-    .story-titel {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        color: white;
-    }
+        .about-first-right {
 
 
-    .line {
-        border-top: 1px solid #2DFCD8;
-        width: 75vw;
-        max-width: 75%;
+            .background-circle {
+                background-color: #FA2759;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                border-radius: 122px;
+                text-align: center;
+            }
 
-        margin-top: 60px;
-        margin-bottom: 60px;
+            img {
+
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+                border: 1px solid black;
+                object-fit: cover;
+            }
+        }
+
+        .about-me-second-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .about-me-second-top-cont {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .stories {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .story {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+
+        }
+
+        .story-text {
+            max-width: 150px;
+        }
+
+        .background-circle {
+            background-color: #FA2759;
+
+            width: 225px;
+            height: 225px;
+            border-radius: 122px;
+
+            text-align: center;
+        }
+
+        img {
+
+            height: 200px;
+            width: 200px;
+        }
+
+        .about-me-second-top-cont-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .amstc-titel {
+            font-size: 40px;
+            font-weight: 600;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .icon-border {
+            height: 60px;
+            width: 60px;
+
+            background-color: #2DFCD8;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 5px 5px 1px black;
+        }
+
+        .icon {
+            height: 20px;
+            width: 20px;
+        }
+
+        .story-titel {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+
+        .line {
+            border-top: 1px solid #2DFCD8;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
 
     }
 }
@@ -127,11 +152,13 @@
         }
 
         .amstc-titel {
-            padding-left: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
-        .amstc-txt{
-            padding-left: 20px;
+        .amstc-txt {
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 

@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
+
+
     background-color: black;
     color: white;
     font-weight: 600;
@@ -13,12 +14,15 @@
     .works-info {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        /* width: 100%; */
         max-width: 100%;
         flex-wrap: wrap;
         padding-bottom: 30px;
+        margin-left: 120px;
+        margin-right: 120px;
+        max-width: 1200px;
 
     }
 
@@ -43,8 +47,7 @@
         flex-direction: column;
        
 
-        padding-left: 20px;
-        padding-right: 20px;
+
     }
 
     .work-cont {
@@ -86,37 +89,38 @@
     .work1 {
         background-image: url("./../../assets/img/elpolloloco.png");
         background-repeat: no-repeat;
-        background-size: 400px 200px;
+        background-size: cover;
+
     }
 
     .work2 {
         background-image: url("./../../assets/img/pokedex.jpg");
         background-repeat: no-repeat;
-        background-size: 400px 200px;
+        background-size: cover;
     }
 
     .work3 {
         background-image: url("./../../assets/img/ringoffire.jpg");
         background-repeat: no-repeat;
-        background-size: 400px 200px;
+        background-size: cover;
     }
 
     .work4 {
         background-image: url("./../../assets/img/supergram.jpg");
         background-repeat: no-repeat;
-        background-size: 400px 200px;
+        background-size: cover;
     }
 
     .work5 {
         background-image: url("./../../assets/img/ibo.jpg");
         background-repeat: no-repeat;
-        background-size: 400px 200px;
+        background-size: cover;
     }
 
     .work6 {
         background-image: url("./../../assets/img/iko.jpg");
         background-repeat: no-repeat;
-        background-size: 400px 200px;
+        background-size: cover;
     }
 
     .button {
@@ -196,10 +200,36 @@
     color: white;
 }
 
+
+
+
+
+@media(max-width: 1060px) {
+
+    .works{
+        .works-info {
+            justify-content: center;
+            margin-left: 0px  !important;
+            margin-right: 0px  !important;
+    }
+    
+    }
+
+
+}
+
+
+
 @media(max-width: 550px) {
 
 
     .works {
+
+        .works-info{
+            justify-content: center;
+            margin-left: 0px  !important;
+            margin-right: 0px  !important;
+        }
         
         .work-cont {
 
@@ -229,39 +259,39 @@
         .work1 {
             background-image: url("./../../assets/img/elpolloloco.png");
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: cover;
 
 
         }
 
         .work2 {
-            background-image: url("./../../assets/img/pokedex.png");
+            background-image: url("./../../assets/img/pokedex.jpg");
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: cover;
         }
 
         .work3 {
             background-image: url("./../../assets/img/ringoffire.jpg");
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: cover;
         }
 
         .work4 {
             background-image: url("./../../assets/img/supergram.png");
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: cover;
         }
 
         .work5 {
             background-image: url("./../../assets/img/ibo.jpg");
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: cover;
         }
 
         .work6 {
             background-image: url("./../../assets/img/iko.jpg");
             background-repeat: no-repeat;
-            background-size: 300px 150px;
+            background-size: cover;
         }
     }
 
