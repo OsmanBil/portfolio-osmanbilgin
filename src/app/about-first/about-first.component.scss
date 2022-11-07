@@ -1,128 +1,139 @@
 .about-first {
+    padding-top: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between !important;
-    align-items: center !important;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
+    justify-content: center;
+    background-color: black;
+    color: white;
 
-    .read-more {
 
-        padding-bottom: 30px;
-        position: absolute;
-        left: 0px;
-        bottom: 24px;
+    .about-first-container {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
+        max-width: 1200px;
+
+
+        .read-more {
+
+            padding-bottom: 30px;
+            position: absolute;
+            left: 0px;
+            bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
 
 
 
-    }
-
-    .read-more img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 45px;
-        object-fit: contain;
-    }
-
-    .arrow {
-
-        box-sizing: border-box;
-        height: 15px;
-        width: 15px;
-        border-style: solid;
-        border-color: white;
-        border-width: 0px 2px 2px 0px;
-        transform: rotate(45deg);
-        transition: border-width 150ms ease-in-out;
-
-
-    }
-
-    .arrow:hover {
-        border-bottom-width: 4px;
-        border-right-width: 4px;
-
-
-    }
-
-    .circle {
-        margin-top: 10px;
-
-        position: absolute;
-        border: 1px solid #fff;
-
-        height: 40px;
-        width: 40px;
-        border-radius: 100%;
-    }
-
-    .fade-in {
-        font-family: Arial;
-        font-size: 60px;
-        animation: fadeIn 5s;
-        -webkit-animation: fadeIn 5s;
-        -moz-animation: fadeIn 5s;
-        -o-animation: fadeIn 5s;
-        -ms-animation: fadeIn 5s;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
         }
 
-        100% {
-            opacity: 1;
+        .read-more img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 45px;
+            object-fit: contain;
+        }
+
+        .arrow {
+
+            box-sizing: border-box;
+            height: 15px;
+            width: 15px;
+            border-style: solid;
+            border-color: white;
+            border-width: 0px 2px 2px 0px;
+            transform: rotate(45deg);
+            transition: border-width 150ms ease-in-out;
+
+
+        }
+
+        .arrow:hover {
+            border-bottom-width: 4px;
+            border-right-width: 4px;
+
+
+        }
+
+        .circle {
+            margin-top: 10px;
+
+            position: absolute;
+            border: 1px solid #fff;
+
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+        }
+
+        .fade-in {
+            font-family: Arial;
+            font-size: 60px;
+            animation: fadeIn 5s;
+            -webkit-animation: fadeIn 5s;
+            -moz-animation: fadeIn 5s;
+            -o-animation: fadeIn 5s;
+            -ms-animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-ms-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     }
 
-    @-moz-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-o-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-ms-keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
 
 
 
@@ -204,23 +215,37 @@
 
 
 @media(max-width: 870px) {
-    .about-first {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
 
 
-        .about-first-titel {
-            font-size: 35px;
-            text-align: center;
-        }
+    .about-first-container {
+flex-direction: column;
 
 
-        .read-more {
-            display: none;
-
+        .about-first {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+    
+    
+            .about-first-titel {
+                font-size: 35px;
+                text-align: center;
+            }
+    
+    
+            .read-more {
+                display: none;
+    
+            }
         }
     }
+
+    .about-first-left {
+
+    height:auto;
+
+    }
+   
 
     .button {
         margin-bottom: 15px;
@@ -232,7 +257,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        }
+        text-align: center;
+    }
 
 }
 
