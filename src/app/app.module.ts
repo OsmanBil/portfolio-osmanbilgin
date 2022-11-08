@@ -40,7 +40,8 @@ const MaterialComponents = [
     AboutMeSecondComponent,
     ContactComponent,
     FooterComponent,
-    OpenCloseComponent
+    OpenCloseComponent,
+ 
   ],
   imports: [
     BrowserModule,

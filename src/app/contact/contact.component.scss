@@ -1,4 +1,7 @@
 .contact {
+  
+  padding-top: 10px;
+  padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -30,7 +33,7 @@ div.elem-group {
   
   label {
     display: block;
-    font-family: 'Aleo';
+
     padding-bottom: 4px;
     font-size: 1.25em;
   }
@@ -42,7 +45,7 @@ div.elem-group {
     border: 0px solid #ccc;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: 'Aleo';
+
     width: 500px;
     padding: 8px;
   }
@@ -56,9 +59,11 @@ div.elem-group {
     background-color: black;
     color: #2DFCD8;
     border: 2px solid #2DFCD8;
-    font-size: 10px;
+    font-size: 20px;
+    font-weight: 700;
     height: 50px;
     width: 180px;
+    transition: all 225ms ease-in-out;
 }
 
 button:hover {

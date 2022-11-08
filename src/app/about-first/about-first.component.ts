@@ -13,4 +13,13 @@ export class AboutFirstComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  border: string = 'thin';
+  hovered: string = 'thin';
+
+  
+  changeStyle($event){
+    this.border = $event.type == 'mouseover' ? 'normal' : 'thin';
+    this.hovered = $event.type == 'mouseover' ? 'hovered' : 'thin';
+  }
+
 }

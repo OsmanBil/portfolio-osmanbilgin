@@ -1,5 +1,40 @@
 .works {
-    padding-top: 120px;
+
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .box {
+
+
+        width: 405px;
+        height: 200px;
+        cursor: pointer;
+
+        background: rgba(0, 0, 0, 0.8);
+
+
+        transition: all 500ms ease-in-out;
+
+
+
+    }
+
+    .hidden {
+          display: none;
+    }
+
+    .visuallyhidden {
+        opacity: 0;
+    }
+
+
+
+
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 120px;
     padding-right: 120px;
     display: flex;
@@ -20,7 +55,7 @@
         .works-info {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: 100%;
             max-width: 100%;
@@ -80,6 +115,8 @@
             background-color: gray;
             height: 200px;
             width: 405px;
+            margin-left: 20px;
+            margin-right: 20px;
 
 
         }
@@ -152,6 +189,7 @@
             background-color: #FA2759;
             color: white;
             cursor: pointer;
+            transition: all 225ms ease-in-out;
         }
 
         .d-none {
@@ -167,14 +205,16 @@
 }
 
 .hoverActive {
-    display: none !important;
+   display: none;
     width: 405px;
     height: 200px;
     cursor: pointer;
 
+
 }
 
 .hoverDeactive {
+    display: none;
     width: 405px;
     height: 200px;
     cursor: pointer;
@@ -209,6 +249,7 @@
     .btnNew:hover {
         background-color: #FA2759 !important;
         color: white;
+        transition: all 225ms ease-in-out;
     }
 }
 
@@ -253,9 +294,16 @@
                 text-align: center;
 
             }
+            
+
+            .row {
+                display: flex;
+                flex-direction: column;
+            }
+
 
             .work-cont {
-                display: flex;
+
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
@@ -299,6 +347,7 @@
                         color: white;
                         height: 20px !important;
                         width: 100px;
+                        transition: all 225ms ease-in-out;
                     }
                 }
             }
@@ -384,18 +433,13 @@
 
     }
 
-    .hoverActive {
-        display: none !important;
-        width: 300px;
-        height: 150px;
-        cursor: pointer;
 
-    }
 
     .hoverDeactive {
         width: 300px;
         height: 150px;
         cursor: pointer;
+        transition: all 225ms ease-in-out;
     }
 
 }
