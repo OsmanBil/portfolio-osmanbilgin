@@ -1,25 +1,15 @@
 .works {
 
-
-
     h2 {
         text-align: center;
     }
 
     .box {
-
-
         width: 405px;
         height: 200px;
         cursor: pointer;
-
         background: rgba(0, 0, 0, 0.8);
-
-
         transition: all 500ms ease-in-out;
-
-
-
     }
 
     .hidden {
@@ -287,6 +277,10 @@
 
 
     .works {
+
+        .box{
+            width: 100% !important;
+        }
 
         .works-container {
 

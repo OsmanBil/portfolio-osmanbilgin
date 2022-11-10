@@ -1,26 +1,26 @@
 <?php
   
         if($_POST) {
-            $visitor_name = "";
-            $visitor_email = "";
+            $name = "";
+            $email = "";
 
             $concerned_department = "";
 
-            $visitor_message = "";
+            $message = "";
             $email_body = "<div>";
               
-            if(isset($_POST['visitor_name'])) {
-                $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
+            if(isset($_POST['name'])) {
+                $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
                 $email_body .= "<div>
-                                   <label><b>Visitor Name:</b></label>&nbsp;<span>".$visitor_name."</span>
+                                   <label><b>Visitor Name:</b></label>&nbsp;<span>".$name."</span>
                                 </div>";
             }
          
-            if(isset($_POST['visitor_email'])) {
-                $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
-                $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
+            if(isset($_POST['email'])) {
+                $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+                $email = filter_var($email, FILTER_VALIDATE_EMAIL);
                 $email_body .= "<div>
-                                   <label><b>Visitor Email:</b></label>&nbsp;<span>".$visitor_email."</span>
+                                   <label><b>Visitor Email:</b></label>&nbsp;<span>".$email."</span>
                                 </div>";
             }
               
@@ -28,11 +28,11 @@
               
 
               
-            if(isset($_POST['visitor_message'])) {
-                $visitor_message = htmlspecialchars($_POST['visitor_message']);
+            if(isset($_POST['message'])) {
+                $message = htmlspecialchars($_POST['message']);
                 $email_body .= "<div>
                                    <label><b>Visitor Message:</b></label>
-                                   <div>".$visitor_message."</div>
+                                   <div>".$message."</div>
                                 </div>";
             }
               
@@ -44,7 +44,7 @@
          
             $headers  = 'MIME-Version: 1.0' . "\r\n"
             .'Content-type: text/html; charset=utf-8' . "\r\n"
-            .'From: ' . $visitor_email . "\r\n";
+            .'From: ' . $email . "\r\n";
               
             if(mail($recipient, $email_body, $headers)) {
                 echo "<p>Thank you for contacting us. You will get a reply within 24 hours.</p>";

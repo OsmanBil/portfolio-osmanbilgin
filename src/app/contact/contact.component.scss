@@ -1,3 +1,6 @@
+.form{
+  width: 100% !important;
+}
 .contact {
   
   padding-top: 10px;
@@ -24,6 +27,7 @@ input{
 
 textarea{
     background-color: rgb(30, 30, 30);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 div.elem-group {
@@ -64,6 +68,7 @@ div.elem-group {
     height: 50px;
     width: 180px;
     transition: all 225ms ease-in-out;
+    margin-left: 16px;
 }
 
 button:hover {
@@ -90,10 +95,18 @@ button:hover {
   color: #2DFCD8;
 }
 
+
+
+
 @media(max-width: 550px) {
   input, select, textarea {
     width: 300px;
 
   }
+
+.btnContainer{
+  display: flex;
+  flex-direction: column;
+}
 
 }

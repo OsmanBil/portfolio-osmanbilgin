@@ -18,8 +18,22 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './open-close/open-close.component';
 
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ThanksComponent } from './thanks/thanks.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { NameService } from './name.service';
+
+
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+
+
+
 
 const MaterialComponents = [
   MatButtonModule,
@@ -41,14 +55,20 @@ const MaterialComponents = [
     ContactComponent,
     FooterComponent,
     OpenCloseComponent,
- 
+    ThanksComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+
   ],
-  providers: [],
+  providers: [NameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
